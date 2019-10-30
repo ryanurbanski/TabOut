@@ -37,7 +37,7 @@ public class LoginCtrl extends JFrame implements ActionListener {
     
     public LoginCtrl() {
         
-        theNavigation = new NavCtrl();
+//        theNavigation = new NavCtrl();
         theUserList = new UserList();
         theLoginUI = new LoginUI();
         add(theLoginUI);
@@ -57,7 +57,6 @@ public class LoginCtrl extends JFrame implements ActionListener {
         {
             System.out.println("Recognizes click ok");              // Test 
             
-            // PROBLEM IN IF STATEMENT BELOW *****************************
             if(theUserList.authenticate(theLoginUI.t1.getText(), theLoginUI.t2.getText()))
             { 
                 System.out.println("authenticated");                 // Test
