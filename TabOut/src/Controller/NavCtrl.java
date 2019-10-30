@@ -35,12 +35,14 @@ public class NavCtrl implements ActionListener {
     public NavCtrl() {
 
         navUI = new NavUI();
+        
+        // add actionListeners to each of the navigation buttons here
 
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        // add if statements for each button for when clicked
     }
     
 }

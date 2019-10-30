@@ -20,35 +20,61 @@ package View;
 import java.awt.Color;
 import java.awt.GridLayout;
 import javax.swing.JButton;
+import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 /**
- * This is the panel that comes up when a user logs in successfully
+ * This is the JFrme that comes up when a user logs in successfully
  * @author ryan
  */
-public class NavUI extends JPanel {
+public class NavUI extends JFrame {
     
     JButton startTabButton;
     JButton payTabButton;
     JButton exitButton;
     JButton messageButton;
     
-    public NavUI(){
-        super();
-        setBackground(Color.darkGray);
-        GridLayout g = new GridLayout(3,1);
-//        BorderLayout b = new BorderLayout();
-        setLayout(g);
+    JPanel mainPanel;
+    
+    public NavUI() {
         
+        // Creates and Formats the JFrame for the Main Menu
+        super();
+        setSize(800,800);
+        setLocationRelativeTo(null);
+        setTitle("Main Menu");
+        setResizable(false);
+        setLayout(null);
+        
+        // Creates a Navigation Pane from JPanel
+        mainPanel = new JPanel();
+        mainPanel.setSize(800, 800);
+        GridLayout g = new GridLayout(4,1);
+        mainPanel.setLayout(g);
+        setBackground(Color.darkGray);
+        add(mainPanel);
+        
+        // Add buttons to JPanel
         startTabButton = new JButton("Start Tab");
-        add(startTabButton);
+        mainPanel.add(startTabButton);
         payTabButton = new JButton("Pay Tab");
-        add(payTabButton);
+        mainPanel.add(payTabButton);
         exitButton = new JButton("Exit");
-        add(exitButton);
+        mainPanel.add(exitButton);
         messageButton = new JButton(" ");              // Will be used to display messages
-        add(messageButton);
+        mainPanel.add(messageButton);
+        
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setVisible(true);
         
     }
     
 }
+
+
+
+        // Original Formatting from Sprint One
+//        super();
+//        setBackground(Color.darkGray);
+//        GridLayout g = new GridLayout(3,1);
+//        setLayout(g);
