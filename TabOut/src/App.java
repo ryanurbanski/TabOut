@@ -15,8 +15,8 @@
  * application for users to pay and split their restaurant tabs from their phone.
  */
 
-import java.util.ArrayList;
 import Controller.NavCtrl;
+import Controller.LoginCtrl;
 
 /**
  * Main class of application
@@ -26,8 +26,9 @@ public class App {
 
     public static void main(String[] args) {
         
-        new NavCtrl();
-        
+//        new NavCtrl();
+        new LoginCtrl();
+
 //        LoginUI loginUI = new LoginUI();
 //        UserList userList = new UserList();
 //        LoginController lc = new LoginController(view, userList);
