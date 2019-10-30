@@ -16,14 +16,14 @@ import java.awt.event.ActionListener;
  *
  * @author alban
  */
-public class NavigationCtrl   {
+public class NavCtrl   {
 
     UserList list;
     MainMenu mainPanel;
      
     int currentIndex;
 
-    public NavigationCtrl() {
+    public NavCtrl() {
       //  animalListUI = new AnimalListUI();
 //        list = new UserList();
       //  populateList();

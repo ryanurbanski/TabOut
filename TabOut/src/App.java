@@ -16,7 +16,7 @@
  */
 
 import java.util.ArrayList;
-import Controller.NavigationCtrl;
+import Controller.NavCtrl;
 
 /**
  * Main class of application
@@ -26,7 +26,7 @@ public class App {
 
     public static void main(String[] args) {
         
-        new NavigationCtrl();
+        new NavCtrl();
         
 //        LoginUI loginUI = new LoginUI();
 //        UserList userList = new UserList();
