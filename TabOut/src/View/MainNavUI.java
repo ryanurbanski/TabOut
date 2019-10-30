@@ -21,7 +21,7 @@ import java.awt.*;
 import javax.swing.*;
 
 /**
- * Outside frame container class
+ * Outside frame container class, currently not used
  * @author ryan
  */
 class MainNavUI extends JFrame {

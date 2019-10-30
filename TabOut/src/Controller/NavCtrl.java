@@ -18,7 +18,7 @@
 package Controller;
 
 import Model.UserList;
-import View.MainMenu;
+import View.NavUI;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
  
@@ -30,18 +30,32 @@ import java.awt.event.ActionListener;
 public class NavCtrl implements ActionListener {
 
     UserList list;
-    MainMenu mainPanel;
+    NavUI navUI;
      
-    int currentIndex;
-
     public NavCtrl() {
+
+        navUI = new NavUI();
+
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+    
+}
+
+
+
+
+
+// UNUSED CODE FROM ANIMAL EXAMPLE
       //  animalListUI = new AnimalListUI();
 //        list = new UserList();
       //  populateList();
-        mainPanel = new MainMenu();
 //        currentIndex = 0;
 //        populateUser();
-////        MainMenu. .addActionListener(this);
+////        NavUI. .addActionListener(this);
 //    }
 
 //    @Override
@@ -60,10 +74,3 @@ public class NavCtrl implements ActionListener {
 //
 //    }
 //}
-    }
-
-    @Override
-    public void actionPerformed(ActionEvent e) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-}

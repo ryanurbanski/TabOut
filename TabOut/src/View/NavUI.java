@@ -26,28 +26,28 @@ import javax.swing.JPanel;
  * This is the panel that comes up when a user logs in successfully
  * @author ryan
  */
-public class MainMenu extends JPanel {
+public class NavUI extends JPanel {
     
-    JButton b1;
-    JButton b2;
-    JButton b3;
-    JButton b4;
+    JButton startTabButton;
+    JButton payTabButton;
+    JButton exitButton;
+    JButton messageButton;
     
-    public MainMenu(){
+    public NavUI(){
         super();
         setBackground(Color.darkGray);
         GridLayout g = new GridLayout(3,1);
 //        BorderLayout b = new BorderLayout();
         setLayout(g);
         
-        b1 = new JButton("Start Tab");
-        add(b1);
-        b2 = new JButton("Pay Tab");
-        add(b2);
-        b3 = new JButton("Exit");
-        add(b3);
-        b4 = new JButton(" ");              // Will be used to display messages
-        add(b4);
+        startTabButton = new JButton("Start Tab");
+        add(startTabButton);
+        payTabButton = new JButton("Pay Tab");
+        add(payTabButton);
+        exitButton = new JButton("Exit");
+        add(exitButton);
+        messageButton = new JButton(" ");              // Will be used to display messages
+        add(messageButton);
         
     }
     
