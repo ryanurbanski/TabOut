@@ -33,17 +33,16 @@ public class LoginCtrl extends JFrame implements ActionListener {
     
     LoginUI theLoginUI;
     UserList theUserList;
-//    NavCtrl theNavigation;
+    NavCtrl theNavigation;
     
     public LoginCtrl() {
         
-//        theNavigation = new NavCtrl();
+        theNavigation = new NavCtrl();
         theUserList = new UserList();
         theLoginUI = new LoginUI();
         add(theLoginUI);
         
-//        this.theLoginUI.getLogin().addActionListener(this); 
-        theLoginUI.getLogin().addActionListener(this);
+        theLoginUI.login.addActionListener(this);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setSize(1200, 800);
         setVisible(true);
@@ -54,27 +53,24 @@ public class LoginCtrl extends JFrame implements ActionListener {
         
         Object obj = ae.getSource();
         
-        if(obj == theLoginUI.getLogin())
+        if(obj == theLoginUI.login)
         {
-            System.out.println("Recognizes click ok");       // Test 
+            System.out.println("Recognizes click ok");              // Test 
             
             // PROBLEM IN IF STATEMENT BELOW *****************************
-            if(theUserList.authenticate(theLoginUI.getUserName().getText(),
-                    theLoginUI.getPassword().getText()))
-                     
+            if(theUserList.authenticate(theLoginUI.t1.getText(), theLoginUI.t2.getText()))
             { 
-                System.out.println("authenticated");
+                System.out.println("authenticated");                 // Test
                 
                 // Print feedback to the bottom button or textfield in LoginUI
-//                theLoginUI.getT3().setText("User authenticated.");
-                
+                theLoginUI.text.setText("User authenticated");
                 
                 // Launch navigation UI
-//                theNavigation = new NavCtrl();
+                theNavigation = new NavCtrl();
             }
             else   
-                System.out.println("Invalid login");
-//                theLoginUI.getT3().setText("Invalid User.");
+//                System.out.println("Invalid login");            // Test... DO NOT UNCOMMENT.. will not run properly!!!!!!
+                theLoginUI.text.setText("Invalid User");
            
         }
     }

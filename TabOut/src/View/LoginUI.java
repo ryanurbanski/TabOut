@@ -34,15 +34,15 @@ import javax.swing.event.ChangeListener;
  */
 public class LoginUI extends JPanel {
     
-    private JButton userName;
-    private JButton password;
-    private JButton login;
-    private JButton cancel;
-    private JButton text;
+//    public JButton userName;          // These were throwing us off
+//    public JButton password;
+    public JButton login;
+    public JButton cancel;
+    public JButton text;
     
-    private JTextField t1;
-    private JTextField t2;
-    private JTextField t3;
+    public JTextField t1;               // Used for userName textField
+    public JTextField t2;               // Used for Password textField
+    public JTextField t3;               // Not used
     
     
     public LoginUI () {
@@ -66,130 +66,9 @@ public class LoginUI extends JPanel {
         cancel = new JButton("Cancel");
         add(cancel);
 
-//        t3 = new JTextField(" ");
-//        add(t3);
-
         text = new JButton(" Enter Username and Password then Press Log In");
         add(text);
         
     }
 
-    /**
-     * @return the userName
-     */
-    public JButton getUserName() {
-        return userName;
-    }
-
-    /**
-     * @param userName the userName to set
-     */
-    public void setUserName(JButton userName) {
-        this.userName = userName;
-    }
-
-    /**
-     * @return the password
-     */
-    public JButton getPassword() {
-        return password;
-    }
-
-    /**
-     * @param password the password to set
-     */
-    public void setPassword(JButton password) {
-        this.password = password;
-    }
-
-    /**
-     * @return the login
-     */
-    public JButton getLogin() {
-        return login;
-    }
-
-    /**
-     * @param login the login to set
-     */
-    public void setLogin(JButton login) {
-        this.login = login;
-    }
-
-    /**
-     * @return the cancel
-     */
-    public JButton getCancel() {
-        return cancel;
-    }
-
-    /**
-     * @param cancel the cancel to set
-     */
-    public void setCancel(JButton cancel) {
-        this.cancel = cancel;
-    }
-
-    /**
-     * @return the text
-     */
-    public JButton getText() {
-        return text;
-    }
-
-    /**
-     * @param text the text to set
-     */
-    public void setText(JButton text) {
-        this.text = text;
-    }
-
-    /**
-     * @return the t1
-     */
-    public JTextField getT1() {
-        return t1;
-    }
-
-    /**
-     * @param t1 the t1 to set
-     */
-    public void setT1(JTextField t1) {
-        this.t1 = t1;
-    }
-
-    /**
-     * @return the t2
-     */
-    public JTextField getT2() {
-        return t2;
-    }
-
-    /**
-     * @param t2 the t2 to set
-     */
-    public void setT2(JTextField t2) {
-        this.t2 = t2;
-    }
-
-    /**
-     * @return the t3
-     */
-    public JTextField getT3() {
-        return t3;
-    }
-
-    /**
-     * @param t3 the t3 to set
-     */
-    public void setT3(JTextField t3) {
-        this.t3 = t3;
-    }
-
-     
-
-   
-
-  
-    
 }
