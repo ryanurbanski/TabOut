@@ -15,22 +15,19 @@
  * application for users to pay and split their restaurant tabs from their phone.
  */
 
-import java.util.ArrayList;
-import Controller.NavigationCtrl;
+package View;
 
 /**
- * Main class of application
+ * View class
  * @author ryan
  */
-public class App {
-
-    public static void main(String[] args) {
-        
-        new NavigationCtrl();
-        
-//        LoginUI loginUI = new LoginUI();
-//        UserList userList = new UserList();
-//        LoginController lc = new LoginController(view, userList);
-
+public class View {
+    
+    MainFrame mf;
+    
+    public View() {
+        this.mf = mf;
     }
+    
+    
 }
