@@ -31,22 +31,22 @@ import static javax.swing.JFrame.EXIT_ON_CLOSE;
  */
 public class LoginCtrl extends JFrame implements ActionListener {
     
-    LoginUI theLoginPanel;
+    LoginUI theLoginUI;
     UserList theUserList;
-    NavCtrl theNavigation;
+//    NavCtrl theNavigation;
     
     public LoginCtrl() {
         
-        theNavigation = new NavCtrl();
+//        theNavigation = new NavCtrl();
         theUserList = new UserList();
-        theLoginPanel = new LoginUI();
-        add (theLoginPanel);
+        theLoginUI = new LoginUI();
+        add(theLoginUI);
         
-        this.theLoginPanel.getLogin().addActionListener(this);            
-            setDefaultCloseOperation(EXIT_ON_CLOSE);
-            setSize(1200, 800);
-            setVisible(true);
-            
+//        this.theLoginUI.getLogin().addActionListener(this); 
+        theLoginUI.getLogin().addActionListener(this);
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setSize(1200, 800);
+        setVisible(true);
     }
 
     @Override
@@ -54,22 +54,27 @@ public class LoginCtrl extends JFrame implements ActionListener {
         
         Object obj = ae.getSource();
         
-        if(obj == theLoginPanel.getLogin())
+        if(obj == theLoginUI.getLogin())
         {
-            if(theUserList.authenticate(theLoginPanel.getUserName().getText(),
-                    theLoginPanel.getPassword().getText()))
+            System.out.println("Recognizes click ok");       // Test 
+            
+            // PROBLEM IN IF STATEMENT BELOW *****************************
+            if(theUserList.authenticate(theLoginUI.getUserName().getText(),
+                    theLoginUI.getPassword().getText()))
                      
             { 
                 System.out.println("authenticated");
                 
                 // Print feedback to the bottom button or textfield in LoginUI
-                theLoginPanel.getT3().setText("User authenticated.  Opening Main Navigation Panel...");
+//                theLoginUI.getT3().setText("User authenticated.");
+                
                 
                 // Launch navigation UI
-                theNavigation = new NavCtrl();
+//                theNavigation = new NavCtrl();
             }
             else   
                 System.out.println("Invalid login");
+//                theLoginUI.getT3().setText("Invalid User.");
            
         }
     }

@@ -31,6 +31,7 @@ public class MainMenu extends JPanel {
     JButton b1;
     JButton b2;
     JButton b3;
+    JButton b4;
     
     public MainMenu(){
         super();
@@ -45,6 +46,8 @@ public class MainMenu extends JPanel {
         add(b2);
         b3 = new JButton("Exit");
         add(b3);
+        b4 = new JButton(" ");              // Will be used to display messages
+        add(b4);
         
     }
     

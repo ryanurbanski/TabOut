@@ -69,7 +69,7 @@ public class LoginUI extends JPanel {
 //        t3 = new JTextField(" ");
 //        add(t3);
 
-        text = new JButton(" ");
+        text = new JButton(" Enter Username and Password then Press Log In");
         add(text);
         
     }

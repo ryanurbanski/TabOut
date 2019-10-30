@@ -25,13 +25,16 @@ import Controller.LoginCtrl;
 public class App {
 
     public static void main(String[] args) {
-        
-//        new NavCtrl();
-        new LoginCtrl();
 
-//        LoginUI loginUI = new LoginUI();
-//        UserList userList = new UserList();
-//        LoginController lc = new LoginController(view, userList);
+        new LoginCtrl();
 
     }
 }
+
+
+//Unused Code: --------------------------------------------------------
+//        new NavCtrl();
+//
+//        LoginUI loginUI = new LoginUI();
+//        UserList userList = new UserList();
+//        LoginController lc = new LoginController(view, userList);

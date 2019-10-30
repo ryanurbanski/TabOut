@@ -24,7 +24,7 @@ import javax.swing.*;
  * Outside frame container class
  * @author ryan
  */
-class MainNavUI extends JFrame{
+class MainNavUI extends JFrame {
     
     LoginUI lp;
 //    MainMenu mnp;

@@ -19,7 +19,6 @@ package Controller;
 
 import Model.UserList;
 import View.MainMenu;
-import View.UserView;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
  

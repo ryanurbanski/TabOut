@@ -26,11 +26,18 @@ import java.util.ArrayList;
 public class UserList {
     ArrayList<User> listOfUsers = new ArrayList<>();
     
+    
     public UserList(){
         listOfUsers.add(new User("ryan", "1234"));
         listOfUsers.add(new User("albana", "1234"));
     }
     
+    /**
+     * Takes a username and password and returns TRUE if they are in UserList
+     * @param username
+     * @param password
+     * @return 
+     */
     public boolean authenticate(String username, String password){
         
         for (User user : listOfUsers) {
