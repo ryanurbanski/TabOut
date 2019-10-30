@@ -23,7 +23,7 @@ package View;
  */
 public class View {
     
-    MainFrame mf;
+    MainNavUI mf;
     
     public View() {
         this.mf = mf;

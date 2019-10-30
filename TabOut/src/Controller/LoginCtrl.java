@@ -18,7 +18,7 @@
 package Controller;
 
 import Model.UserList;
-import View.LoginPanel;
+import View.LoginUI;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -31,7 +31,7 @@ import static javax.swing.JFrame.EXIT_ON_CLOSE;
  */
 public class LoginCtrl extends JFrame implements ActionListener {
     
-    LoginPanel theLoginPanel;
+    LoginUI theLoginPanel;
     UserList theUserList;
     NavCtrl theNavigation;
     
@@ -39,7 +39,7 @@ public class LoginCtrl extends JFrame implements ActionListener {
         
         theNavigation = new NavCtrl();
         theUserList = new UserList();
-        theLoginPanel = new LoginPanel();
+        theLoginPanel = new LoginUI();
         add (theLoginPanel);
         
         this.theLoginPanel.getLogin().addActionListener(this);            

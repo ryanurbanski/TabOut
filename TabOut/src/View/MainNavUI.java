@@ -24,19 +24,19 @@ import javax.swing.*;
  * Outside frame container class
  * @author ryan
  */
-class MainFrame extends JFrame{
+class MainNavUI extends JFrame{
     
-    LoginPanel lp;
+    LoginUI lp;
 //    MainMenu mnp;
     
-    public MainFrame() {
+    public MainNavUI() {
         super("TabOut");
         setupLayoutForMacs();
         BorderLayout b = new BorderLayout();
         setLayout(b);
         
         // Create panel
-        lp = new LoginPanel();
+        lp = new LoginUI();
         add(lp, "Center");
 
         // To test the main menu view
