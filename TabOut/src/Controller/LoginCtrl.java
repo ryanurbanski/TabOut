@@ -36,14 +36,17 @@ public class LoginCtrl extends JFrame implements ActionListener {
     NavCtrl theNavigation;
     
     public LoginCtrl() {
+        
         theNavigation = new NavCtrl();
         theUserList = new UserList();
         theLoginPanel = new LoginPanel();
         add (theLoginPanel);
+        
         this.theLoginPanel.getLogin().addActionListener(this);            
             setDefaultCloseOperation(EXIT_ON_CLOSE);
             setSize(1200, 800);
             setVisible(true);
+            
     }
 
     @Override
@@ -58,7 +61,12 @@ public class LoginCtrl extends JFrame implements ActionListener {
                      
             { 
                 System.out.println("authenticated");
-            theNavigation = new NavCtrl();
+                
+                // Print feedback to the bottom button or textfield in LoginUI
+                theLoginPanel.getT3().setText("User authenticated.  Opening Main Navigation Panel...");
+                
+                // Launch navigation UI
+//                theNavigation = new NavCtrl();
             }
             else   
                 System.out.println("Invalid login");

@@ -32,8 +32,7 @@ import javax.swing.event.ChangeListener;
  * This displays the text entry boxes to verify user information
  * @author ryan
  */
-public class LoginPanel extends JPanel 
-       {
+public class LoginPanel extends JPanel {
     
     private JButton userName;
     private JButton password;
@@ -67,8 +66,11 @@ public class LoginPanel extends JPanel
         cancel = new JButton("Cancel");
         add(cancel);
 
-        t3 = new JTextField(" ");
-        add(t3);
+//        t3 = new JTextField(" ");
+//        add(t3);
+
+        text = new JButton(" ");
+        add(text);
         
     }
 
