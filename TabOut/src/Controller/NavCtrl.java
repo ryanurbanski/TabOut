@@ -28,7 +28,7 @@ import java.awt.event.ActionListener;
  * This is the main navigation controller 
  * @author alban
  */
-public class NavCtrl   {
+public class NavCtrl implements ActionListener {
 
     UserList list;
     MainMenu mainPanel;
@@ -61,5 +61,10 @@ public class NavCtrl   {
 //
 //    }
 //}
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }

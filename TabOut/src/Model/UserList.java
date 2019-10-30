@@ -37,11 +37,7 @@ public class UserList {
             if(user.getUsername().equalsIgnoreCase(username) && 
                     user.getPassword().equalsIgnoreCase(password))
                 return true;         
-            
-            // is there an issue here? .. Ryan
-            
         }
-        
         return false;
     }
     

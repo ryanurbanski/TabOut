@@ -66,7 +66,7 @@ public class LoginCtrl extends JFrame implements ActionListener {
                 theLoginPanel.getT3().setText("User authenticated.  Opening Main Navigation Panel...");
                 
                 // Launch navigation UI
-//                theNavigation = new NavCtrl();
+                theNavigation = new NavCtrl();
             }
             else   
                 System.out.println("Invalid login");
