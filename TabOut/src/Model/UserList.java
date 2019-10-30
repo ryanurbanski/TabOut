@@ -19,20 +19,29 @@ package Model;
 
 import java.util.ArrayList;
 
+/**
+ * The constructor creates a hardcoded list of two test users with passwords
+ * @author ryan
+ */
 public class UserList {
     ArrayList<User> listOfUsers = new ArrayList<>();
+    
     public UserList(){
-        listOfUsers.add(new User("first", "test1"));
-        listOfUsers.add(new User("second", "test"));
-        
+        listOfUsers.add(new User("ryan", "1234"));
+        listOfUsers.add(new User("albana", "1234"));
     }
+    
     public boolean authenticate(String username, String password){
         
         for (User user : listOfUsers) {
             if(user.getUsername().equalsIgnoreCase(username) && 
                     user.getPassword().equalsIgnoreCase(password))
                 return true;         
+            
+            // is there an issue here? .. Ryan
+            
         }
+        
         return false;
     }
     

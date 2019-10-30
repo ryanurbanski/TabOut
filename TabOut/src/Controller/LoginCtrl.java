@@ -29,31 +29,30 @@ import static javax.swing.JFrame.EXIT_ON_CLOSE;
  * Controls the login interface
  * @author ryan
  */
-public class LoginCtrl extends JFrame implements ActionListener{
+public class LoginCtrl extends JFrame implements ActionListener {
     
     LoginPanel theLoginPanel;
     UserList theUserList;
     NavCtrl theNavigation;
     
     public LoginCtrl() {
-    theNavigation=new NavCtrl();
-    theUserList = new UserList();
-    theLoginPanel = new LoginPanel();
-    add (theLoginPanel);
-    this.theLoginPanel.getLogin().addActionListener(this);            
-        setDefaultCloseOperation(EXIT_ON_CLOSE);
-        setSize(1200, 800);
-        setVisible(true);
+        theNavigation = new NavCtrl();
+        theUserList = new UserList();
+        theLoginPanel = new LoginPanel();
+        add (theLoginPanel);
+        this.theLoginPanel.getLogin().addActionListener(this);            
+            setDefaultCloseOperation(EXIT_ON_CLOSE);
+            setSize(1200, 800);
+            setVisible(true);
     }
-
-
 
     @Override
     public void actionPerformed(ActionEvent ae) {
+        
         Object obj = ae.getSource();
+        
         if(obj == theLoginPanel.getLogin())
         {
-            
             if(theUserList.authenticate(theLoginPanel.getUserName().getText(),
                     theLoginPanel.getPassword().getText()))
                      
@@ -66,4 +65,5 @@ public class LoginCtrl extends JFrame implements ActionListener{
            
         }
     }
+    
 }

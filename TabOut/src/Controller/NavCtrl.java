@@ -25,7 +25,7 @@ import java.awt.event.ActionListener;
  
 
 /**
- *
+ * This is the main navigation controller 
  * @author alban
  */
 public class NavCtrl   {
