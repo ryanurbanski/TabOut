@@ -37,6 +37,8 @@ public class NavCtrl implements ActionListener {
         navUI = new NavUI();
         
         // add actionListeners to each of the navigation buttons here
+        
+        //added a button with ActionListener
 
     }
 

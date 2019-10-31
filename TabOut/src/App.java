@@ -32,9 +32,3 @@ public class App {
 }
 
 
-//Unused Code: --------------------------------------------------------
-//        new NavCtrl();
-//
-//        LoginUI loginUI = new LoginUI();
-//        UserList userList = new UserList();
-//        LoginController lc = new LoginController(view, userList);
